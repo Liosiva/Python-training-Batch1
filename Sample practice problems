@@ -1,0 +1,16 @@
+#input: a1b10..
+#output: abbbbbbbbb
+import re
+n= input()
+d=[]
+k=0
+f=re.findall(r'\d+|[a-zA-Z]',n)
+for i in f:
+    if i.isdigit():
+        s=int(i)
+        for j in range(s):
+            d.append(l)
+    elif i.isalpha():
+        l=i
+k=''.join(d)
+print(k)
